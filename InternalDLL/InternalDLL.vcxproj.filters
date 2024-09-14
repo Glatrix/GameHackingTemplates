@@ -2,10 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="include.h" />
-    <ClInclude Include="utility\utility.h" />
+    <ClInclude Include="utility\utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="utility\utility.cpp" />
+    <ClCompile Include="utility\utility.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="utility">
+      <UniqueIdentifier>{8205b81e-7ffc-490b-8ea8-1752dbe6fa64}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
